@@ -1,0 +1,14 @@
+{
+  "name": "sass_test",
+  "version": "1.0.0",
+  "description": "testing sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "paul",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
