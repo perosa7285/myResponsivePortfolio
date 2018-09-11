@@ -129,6 +129,58 @@ main {
     }
 }
 
+// Contact Page
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+        
+        &:hover {
+            padding: 1rem 2rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
+
+// Button Styles
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+}
+
+.btn-light {
+    @extend .btn;
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
